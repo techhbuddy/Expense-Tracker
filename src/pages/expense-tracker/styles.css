@@ -1,0 +1,115 @@
+/* General Styles for the Expense Tracker */
+.expense-tracker {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #023047;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header Styles */
+.expense-tracker h1 {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styles */
+.expense-tracker button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.expense-tracker button:hover {
+  background-color: #3cb0fd;
+  transform: scale(1.1);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: rotate(360deg);
+}
+
+/* Sign Out Button Styles */
+.sign-out-button {
+  border: none;
+  margin-top: 50px;
+  width: 150px;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.sign-out-button:hover {
+  background: #3cb0fd;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Transactions Container */
+.transactions {
+  margin-left: 430px;
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 600px;
+  height: 400px;
+  overflow: auto;
+  border: 3px solid #023047;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.transactions:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.delete-transaction {
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
